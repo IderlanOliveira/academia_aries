@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101310">
+  <meta name="description" content="Comece sua jornada na Academia Áries. Escolha seu plano e prepare sua pré-matrícula.">
+  <title>Comece sua jornada — Áries Academia</title>
+  <link rel="icon" href="../assets/images/images-_1_.ico">
+  <link rel="stylesheet" href="../assets/css/home.css">
+  <link rel="stylesheet" href="../assets/css/matricula.css">
+  <script src="../assets/js/matricula.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o formulário</a>
+  <header class="site-header"><a class="brand" href="../index.html" aria-label="Academia Áries, início"><span class="brand-mark" aria-hidden="true">A<span>↗</span></span><span>ÁRIES<span class="brand-sub">ACADEMIA</span></span></a><a class="text-link" href="../index.html#planos">← Voltar aos planos</a></header>
+  <main id="conteudo" class="enrollment">
+    <aside class="enrollment-intro"><p class="eyebrow"><span class="status-dot"></span> SEU PRÓXIMO CAPÍTULO</p><h1>O PRIMEIRO<br>PASSO É<br><span>TODO SEU.</span></h1><p>Uma nova rotina começa com uma escolha.<br>Vamos encontrar a sua.</p><ol class="steps"><li class="active" id="step-one"><span>01</span><div>Seu ponto de partida<small>Escolha o plano e conte quem é você.</small></div></li><li id="step-two"><span>02</span><div>Revise e fale com a equipe<small>Confirme os detalhes pelo WhatsApp.</small></div></li></ol><div class="intro-note">PRÉ-MATRÍCULA SEM PAGAMENTO ONLINE<br>A confirmação acontece com a nossa equipe.</div></aside>
+    <section class="enrollment-panel" aria-labelledby="form-title">
+      <div id="form-view"><p class="eyebrow">01 / SEU PONTO DE PARTIDA</p><h2 id="form-title">VAMOS COMEÇAR?</h2><p class="form-description">Preencha o essencial. O resto a gente conversa.</p>
+        <form id="enrollment-form">
+          <label for="plan">Seu plano</label><select id="plan" name="plano"><option value="">Quero ajuda para escolher</option><option value="bronze">Bronze — R$ 65,00 / mês</option><option value="prata">Prata — R$ 75,00 / mês</option><option value="ouro">Ouro — R$ 90,00 / mês</option></select>
+          <div id="plan-detail" class="plan-detail" aria-live="polite">A equipe vai ajudar você a encontrar o plano ideal.</div>
+          <label for="name">Nome completo</label><input id="name" name="nome" type="text" autocomplete="name" minlength="3" maxlength="100" placeholder="Como podemos chamar você?" required>
+          <label for="phone">Celular com DDD</label><input id="phone" name="celular" type="tel" autocomplete="tel-national" inputmode="tel" maxlength="22" placeholder="(82) 99999-9999" required aria-describedby="phone-hint"><small id="phone-hint" class="input-hint">Informe um número brasileiro com DDD.</small>
+          <label class="consent"><input id="consent" type="checkbox" required><span>Concordo em compartilhar meu nome, celular e plano com a equipe da Áries pelo WhatsApp para solicitar a pré-matrícula.</span></label>
+          <button class="button" type="submit">Revisar minha pré-matrícula <span aria-hidden="true">↗</span></button><p class="privacy-note">Seus dados não são salvos neste site. Eles serão incluídos na mensagem ao continuar para o WhatsApp.</p>
+        </form>
+      </div>
+      <div id="review-view" hidden><p class="eyebrow">02 / TUDO NO SEU RITMO</p><h2>PRONTO PARA<br>O PRÓXIMO PASSO?</h2><p class="form-description">Confira os dados antes de conversar com a equipe.</p><dl class="review-details"><div><dt>Nome</dt><dd id="review-name"></dd></div><div><dt>Celular</dt><dd id="review-phone"></dd></div><div><dt>Plano</dt><dd id="review-plan"></dd></div></dl><p class="review-note">Ao continuar, o WhatsApp abrirá com sua mensagem pronta. Envie a mensagem para solicitar sua pré-matrícula. A equipe confirma disponibilidade, valores e pagamento.</p><a id="whatsapp-link" class="button" href="https://wa.me/5582994181633" target="_blank" rel="noopener noreferrer">Continuar no WhatsApp <span aria-hidden="true">↗</span></a><button id="edit-details" class="edit-button" type="button">← Editar meus dados</button></div>
+      <noscript><p>Para preparar sua pré-matrícula, ative o JavaScript ou <a href="https://wa.me/5582994181633">fale diretamente com a equipe pelo WhatsApp</a>.</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer enrollment-footer"><p>ÁRIES ACADEMIA · Transforme seu suor em sucesso.</p><a href="https://wa.me/5582994181633" target="_blank" rel="noopener noreferrer">Precisa de ajuda? Fale com a equipe ↗</a></footer>
+</body>
+</html>
